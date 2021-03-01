@@ -13,10 +13,10 @@ provider "aws" {
 }
 
 resource "aws_instance" "terra_7" {
-  ami           = "ami-009b16df9fcaac611"
+  ami           = "ami-*********"
   instance_type = "t2.micro"
-  vpc_security_group_ids = ["sg-09bd8cc43d1c33259"]
-  subnet_id              = "subnet-0646b7962ac7e42a7"
+  vpc_security_group_ids = ["sg-same with EC2"]
+  subnet_id              = "subnet-**************"
 
   tags = {
     Name = "Lesson7"
